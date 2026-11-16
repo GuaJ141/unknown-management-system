@@ -1,0 +1,19 @@
+docs/*
+!/docs/AI项目文档.docx
+
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr

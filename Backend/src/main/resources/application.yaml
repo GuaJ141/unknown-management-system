@@ -1,0 +1,21 @@
+mysql:
+  dbname: se_project
+spring:
+  application:
+    name: Backend
+
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/${mysql.dbname}
+    username: root
+    password: root
+
+  data:
+    redis:
+      host: localhost
+      port: 6379
+      # Redis server must enable expired-key notifications: CONFIG SET notify-keyspace-events Ex
+
+mybatis:
+  configuration:
+    map-underscore-to-camel-case: true

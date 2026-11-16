@@ -1,0 +1,178 @@
+.teacher-search input,
+.teacher-course-select select,
+.teacher-score-form select,
+.teacher-score-form input {
+  min-height: 38px;
+  padding: 0 11px;
+  border: 1px solid #e1e7ef;
+  border-radius: 7px;
+  outline: none;
+  background: #fff;
+  color: #425570;
+  font: inherit;
+  font-size: 10px;
+}
+
+.teacher-search input {
+  width: min(250px, 42vw);
+}
+
+.teacher-course-select {
+  display: grid;
+  gap: 5px;
+  color: #8391a4;
+  font-size: 9px;
+}
+
+.teacher-course-select select {
+  min-width: 180px;
+}
+
+.teacher-search input:focus,
+.teacher-course-select select:focus,
+.teacher-score-form select:focus,
+.teacher-score-form input:focus {
+  border-color: #8bb0e2;
+  box-shadow: 0 0 0 3px rgba(95, 143, 207, .1);
+}
+
+.teacher-student-table-wrap {
+  overflow-x: auto;
+}
+
+.teacher-student-table {
+  width: 100%;
+  border-collapse: collapse;
+  color: #586b83;
+  font-size: 10px;
+  text-align: left;
+}
+
+.teacher-student-table th,
+.teacher-student-table td {
+  padding: 12px 10px;
+  border-bottom: 1px solid #edf0f5;
+  white-space: nowrap;
+}
+
+.teacher-student-table th {
+  background: #f7f9fc;
+  color: #8391a4;
+  font-size: 9px;
+  font-weight: 650;
+}
+
+.teacher-student-table td:nth-child(2) {
+  color: #405570;
+  font-weight: 650;
+}
+
+.teacher-score-actions {
+  display: flex;
+  gap: 7px;
+}
+
+.teacher-score-action {
+  padding: 4px 8px;
+  border: 1px solid #dce5f1;
+  border-radius: 6px;
+  background: #fff;
+  color: #58708e;
+  cursor: pointer;
+  font: inherit;
+  font-size: 9px;
+}
+
+.teacher-score-action:hover:not(:disabled) {
+  border-color: #b7cde9;
+  background: #f8fbff;
+}
+
+.teacher-score-action.is-danger {
+  border-color: #f1d9d4;
+  color: #b36251;
+}
+
+.teacher-score-action.is-danger:hover:not(:disabled) {
+  background: #fff8f6;
+}
+
+.teacher-score-action:disabled {
+  cursor: not-allowed;
+  opacity: .58;
+}
+
+.teacher-list-count {
+  margin: 12px 0 0;
+  color: #98a5b5;
+  font-size: 9px;
+  text-align: right;
+}
+
+.teacher-score-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(220px, .58fr);
+  align-items: start;
+  gap: 14px;
+}
+
+.teacher-score-form select {
+  width: 100%;
+}
+
+.teacher-score-results {
+  margin-top: 24px;
+  padding-top: 20px;
+  border-top: 1px solid #edf0f5;
+}
+
+.teacher-score-results .student-panel-heading {
+  margin-bottom: 12px;
+}
+
+.teacher-score-tip {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  background: #fffdf8;
+}
+
+.teacher-score-tip .quick-mark {
+  flex: 0 0 30px;
+}
+
+.teacher-score-tip strong {
+  color: #52647e;
+  font-size: 10px;
+}
+
+.teacher-score-tip p {
+  margin: 7px 0 0;
+  color: #8b97a8;
+  font-size: 9px;
+  line-height: 1.8;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  clip-path: inset(50%);
+}
+
+@media (max-width: 760px) {
+  .teacher-score-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .teacher-search input {
+    width: 100%;
+  }
+
+  .teacher-course-select select {
+    width: 100%;
+  }
+}
