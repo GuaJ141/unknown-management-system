@@ -1,2 +1,2 @@
 # unknown-management-system
-AI Agent project
+AI Agent product
